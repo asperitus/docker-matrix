@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  matrix:
+    image: asperitus/matrix
+    container_name: matrix
+    ports:
+      - "8080:8080"
+    networks:
+      - matrix-net
+
+networks:
+  matrix-net:
